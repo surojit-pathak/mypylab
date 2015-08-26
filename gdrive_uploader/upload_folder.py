@@ -2,6 +2,7 @@
 
 import httplib2
 import pprint
+import mimetypes
 import os
 import sys
 
@@ -34,12 +35,19 @@ drive_service = build('drive', 'v2', http=http)
 
 def put_file (FILENAME, title, parent_id, desc='A test document'):
     # Insert a file
-    media_body = MediaFileUpload(FILENAME, mimetype='text/plain', resumable=True)
+    extn = FILENAME.split('.')[-1]
+    try:
+       mimetype = mimetypes.types_map['.' + extn ]
+    except KeyError:
+       mimetype = 'text/plain'
+
+    media_body = MediaFileUpload(FILENAME, mimetype=mimetype, resumable=True)
     body = {
 	    'title': title,
 	    'description': desc,
             'parents': [{'id': parent_id}],
-            'mimeType': 'text/plain'
+            'mimeType': mimetype
+            # 'mimeType': 'text/plain'
     }
 
     file = drive_service.files().insert(body=body, media_body=media_body).execute()
