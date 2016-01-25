@@ -6,8 +6,6 @@
 Sample Usage:
 """
 
-from lxml import html
-import requests
 HINDUSTANI_NOTES = ['S', 'r', 'R', 'g', 'G', 'm', 'M', 'P', 'd', 'D', 'n', 'N']
 NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 # My scale offset is C -> C#
@@ -51,8 +49,10 @@ def form_chords(scale):
            elif dist2 == 3:
               chords.append(triads[0] + '-dim')
            else:
+              print triads
               raise Exception('Anomaly!')
         else:
+              print triads
               raise Exception('Anomaly!')
 
     return chords
@@ -107,6 +107,8 @@ def find_best_match_for_chords(chords):
         print tx_chds_map
                 
 def get_hindustani_scale():
+    return 'S-R-G-m-P-D-N'
+    return "S-R-g-m-P-D-n"
     thaat_dict = {
         'kaafi' : 'S-R-g-m-P-D-n',
         'bhairav': 'S-r-G-m-P-D-n',
@@ -120,7 +122,8 @@ def get_hindustani_scale():
         'simhendramadhyam': 'S-R-g-M-P-d-N',
         'bhimpalasi' : 'kaafi',
         'malhar': 'kaafi',
-        'ahir bhairav' : 'bhairav'
+        'ahir bhairav' : 'bhairav',
+        'iman' : 'kalyan'
     }
   
     print "Do you want to map a raga?"
