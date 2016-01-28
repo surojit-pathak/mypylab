@@ -15,8 +15,13 @@ def count_squares(a,b):
        x = x + 1
        a = x * x
     print count
+    return count
 
-t = int(raw_input().strip())
-for a0 in xrange(t):
-    a, b = map(lambda x: int(x), raw_input().strip().split())
-    count_squares(a, b)
+def main():
+    t = int(raw_input().strip())
+    for a0 in xrange(t):
+        a, b = map(lambda x: int(x), raw_input().strip().split())
+        count_squares(a, b)
+
+if __name__ == '__main__':
+    main()
