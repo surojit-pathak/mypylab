@@ -1,0 +1,24 @@
+https://www.hackerrank.com/challenges/jesse-and-cookies
+
+Jesse loves cookies. He wants the sweetness of all his cookies to be greater than value KK. To do this, Jesse repeatedly mixes two cookies with the least sweetness. He creates a special combined cookie with:
+
+sweetness =(1×=(1× Least sweet cookie ++ 2×2× 2nd least sweet cookie).
+
+He repeats this procedure until all the cookies in his collection have a sweetness ≥K≥K. 
+You are given Jesse's cookies. Print the number of operations required to give the cookies a sweetness ≥K≥K. Print −1−1 if this isn't possible.
+
+Input Format
+
+The first line consists of integers NN, the number of cookies and KK, the minimum required sweetness, separated by a space. 
+The next line contains NN integers describing the array AA where AiAi is the sweetness of the ithith cookie in Jesse's collection.
+
+Constraints
+
+1≤N≤1061≤N≤106 
+0≤K≤1090≤K≤109 
+0≤Ai≤1060≤Ai≤106
+
+Output Format
+
+Output the number of operations that are needed to increase the cookie's sweetness ≥K≥K. 
+Output −1−1 if this isn't possible.
