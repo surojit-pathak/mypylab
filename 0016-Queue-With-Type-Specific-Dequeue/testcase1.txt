@@ -1,0 +1,23 @@
+5
+ENQ A Apple
+ENQ B Boy
+ENQ A Access
+DEQ  
+TDQ A
+EXIT
+MyQ.display(1) - 
+Type:A, Data:Apple
+MyQ.display(2) - 
+Type:A, Data:Apple
+Type:B, Data:Boy
+MyQ.display(3) - 
+Type:A, Data:Apple
+Type:B, Data:Boy
+Type:A, Data:Access
+('Apple', 'A')
+MyQ.display(4) - 
+Type:B, Data:Boy
+Type:A, Data:Access
+('Access', 'A')
+MyQ.display(5) - 
+Type:B, Data:Boy
