@@ -1,0 +1,50 @@
+https://www.hackerrank.com/contests/101hack34/challenges/beautiful-segments
+
+You are given an array, AA, consisting of NN integers.
+
+A segment, [l,r][l,r], is beautiful if and only if the bitwise AND of all numbers in AA with indices in the inclusive range of [l,r][l,r] is not greater than XX. In other words, segment [l,r][l,r] is beautiful if (Al∧Al+1∧…∧Ar)≤X(Al∧Al+1∧…∧Ar)≤X.
+
+You must answer QQ queries. Each query, QjQj, consists of 33 integers: LjLj, RjRj, and XjXj. The answer for each QjQj is the number of beautiful segments [l,r][l,r] such that Lj≤l≤r≤RjLj≤l≤r≤Rj and X=XjX=Xj.
+
+Input Format
+
+The first line contains two space-separated integers, NN (the number of integers in AA) and QQ (the number of queries).
+
+The second line contains NN space-separated integers, where the ithith integer denotes the ithith element of array AA.
+
+Each line jj of the QQ subsequent lines contains 33 space-separated integers, LjLj, RjRj, and XjXj, respectively, describing query QjQj.
+
+Constraints
+
+1≤N≤4×1041≤N≤4×104
+1≤Q≤1051≤Q≤105
+1≤Lj≤Rj≤N1≤Lj≤Rj≤N
+0≤Xj≤2170≤Xj≤217
+0≤Ai<2170≤Ai<217
+1≤N,Q≤20001≤N,Q≤2000 holds for test cases worth at least 10%10% of the problem's score.
+0≤Ai<2110≤Ai<211 holds for test cases worth at least 40%40% of the problem's score.
+Output Format
+
+Print QQ lines, where the jthjth line contains the number of beautiful segments for query QjQj.
+
+Sample Input
+
+5 3
+1 2 7 3 4
+1 5 3
+2 4 6
+3 5 2
+Sample Output
+
+13
+5
+2
+Explanation
+
+The beautiful segments for all queries are listed below.
+
+Query 0: The beautiful segments are [1,1],[1,2],[1,3],[1,4],[1,5],[2,2],[2,3],[2,4],[2,5],[3,4],[3,5],[4,4],[4,5][1,1],[1,2],[1,3],[1,4],[1,5],[2,2],[2,3],[2,4],[2,5],[3,4],[3,5],[4,4],[4,5].
+
+Query 1: The beautiful segments are [2,2],[2,3],[2,4],[3,4],[4,4][2,2],[2,3],[2,4],[3,4],[4,4].
+
+Query 2: The beautiful segments are [3,5],[4,5][3,5],[4,5].
