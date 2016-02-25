@@ -26,7 +26,5 @@ class MyTest(unittest.TestCase):
     def test_testcase1(self):
         self._test_testcase('./testcase1.txt')
 
-    def test_sysmax(self):
-        self._test_testcase('./testcase2.txt')
 if __name__ == '__main__':
     unittest.main()

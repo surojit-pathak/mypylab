@@ -1,0 +1,15 @@
+https://www.hackerrank.com/contests/101hack34/challenges/beautiful-string
+
+You are given a string, SS, consisting of lowercase English letters.
+
+A string is beautiful with respect to SS if it can be derived from SS by removing exactly 22 characters.
+
+Find and print the number of different strings that are beautiful with respect to SS.
+
+Input Format
+
+A single string of lowercase English letters denoting SS.
+
+Output Format
+
+Print the number of different strings that are beautiful with respect to SS.
