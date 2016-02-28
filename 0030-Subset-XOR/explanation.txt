@@ -1,0 +1,8 @@
+Continuous sub-array demonstrates a unque property -
+- Number of sub-arrays containing i-th element is (n - i) * (i + 1)
+  - number of sub-array starting at i is (n - i)
+  - i also gets included in sub-arrays begining at 0 ... i, i.e. (i + 1) times
+- XORing an element even number of times result zero.
+- Further simplification,
+  if n is even, only odd index elements are xor-ed
+  if n is odd, only even index elements are xor-ed
