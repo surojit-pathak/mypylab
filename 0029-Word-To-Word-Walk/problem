@@ -1,0 +1,14 @@
+Given a dictionary, find out the shortest sequence of words for a given 
+starting word and a destination word, such that for any two successive
+words, only one letter changes.
+e.g. 
+Input:
+Ball Heat
+
+Output:
+Ball
+Bell
+Hell
+Heal
+Heat
+
