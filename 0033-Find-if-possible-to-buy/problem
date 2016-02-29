@@ -1,0 +1,2 @@
+Shopkeeper want sells in the packs of given items. Given an n, you need to find whether its possible to buy the items or not.
+For example, for given items 20,9 and 6 and n=21, you can buy 2 packs of 6 and one pack of 9(2*6 + 9). So the decision is yes.
