@@ -19,29 +19,7 @@ def find_if_possible_to_buy(items, n, k):
                 break
         pchart[l] = result
     return pchart[k]
-             
-            
-            
-            
       
-def find_if_possible_to_buy_memo(items, n, k, memo=None):
-    if memo is None:
-        memo = {}
-        memo[0] = True
-        for i in items:
-            memo[i] = True
-    if k in memo:
-        return memo[k] 
-    
-    if n == 0:
-       return False
-    if items[n-1] == k:
-       memo[k] = True
-       return True
-    if items[n-1] > k:
-       return find_if_possible_to_buy(items, n-1, k)
-    return (find_if_possible_to_buy(items, n, k - items[n-1]) or find_if_possible_to_buy(items, n-1, k))
-
 def find_if_possible_to_buy_memo(items, n, k, memo=None):
     if memo is None:
         memo = {}
