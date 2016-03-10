@@ -1,0 +1,8 @@
+Get the decimal value for a given integer in roman representation.
+
+
+Notes:
+- only I and X are used as prefix for subtraction
+- keeping a counter of max and running total does the job, if we adding going high from max and subtract otherwise, on the reverse string
+  - but can not assert the sanity of the roman string
+  - xiiiv => 13
