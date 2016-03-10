@@ -1,0 +1,6 @@
+Print the romal numeral representation of a given decimal.
+
+======
+Solution Approach
+- For a range of 1-10, 1,5,10 are new literal. 4, 9 are exceptions and the logic is additive.
+- Break the number to the list of additive terms, finding the highest inclusive known terms.
