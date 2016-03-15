@@ -1,0 +1,3 @@
+https://www.careercup.com/question?id=5180595304923136
+
+Given predicted stock prices for next n days for a stock e.g : 10, 30, 42, 15, 20, 50, 10, 25 find the maximum profit that can be made with a single buy-sell transaction. If no profit can be made return 0. In the example buying at 15 and selling at 50 gives maximum profit. Note that the two prices are neither minimum nor maximum in the array.
