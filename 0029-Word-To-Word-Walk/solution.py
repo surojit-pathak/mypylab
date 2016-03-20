@@ -58,16 +58,13 @@ class WordDictionary(object):
             return
         visited = []
         q = Queue.Queue()
-        q.put((ws, None))
+        q.put((ws, ''))
         while q.empty() is False:
             n, path = q.get()
             if n == we:
                print path + we
                return
-            if path is None: 
-               path = n + '->'
-            else:
-               path = path + n + '->'
+            path = path + n + '->'
 
             for adj in self.wg.edges[n]:
                 if adj not in visited:
@@ -82,7 +79,9 @@ def main(input_fp=None):
     if input_fp is None:
        input_fp = sys.stdin
     WD = WordDictionary()
-    while True:
+    t = map(lambda x: int(x), raw_input(input_fp).split())[0]
+    while t:
+        t -= 1
 	s, e = raw_input(input_fp).split()
 	start = time.time()
 	WD.find_path(s,e)
